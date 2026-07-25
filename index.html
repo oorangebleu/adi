@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Drop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="title-bar">
+        <div>
+          <p class="eyebrow">Arcade</p>
+          <h1>Adi's Block Drop</h1>
+        </div>
+        <button id="restartBtn" class="ghost-btn">Restart</button>
+      </header>
+
+      <section class="game-area">
+        <div class="board-frame">
+          <div id="board" class="board" aria-label="Tetris-style game board"></div>
+          <div id="overlay" class="overlay">Press Enter to Start</div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="card">
+            <h2>Adi's Score</h2>
+            <p id="score" class="stat">0</p>
+          </div>
+          <div class="card">
+            <h2>Adi's Next</h2>
+            <div id="next" class="next-board" aria-label="Next piece preview"></div>
+          </div>
+          <div class="card">
+            <h2>Controls</h2>
+            <ul>
+              <li>← → move</li>
+              <li>↑ rotate</li>
+              <li>↓ soft drop</li>
+              <li>Space hard drop</li>
+              <li>P pause</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
